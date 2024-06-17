@@ -17,7 +17,6 @@ def BinSrch(key, p, r):
         else:
             p = q+1
     return False, -1
-    
 
 found = False
 for x in a:

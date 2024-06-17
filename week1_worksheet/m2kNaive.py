@@ -2,7 +2,6 @@ K = int(input())
 a = list(map(int, input().split()))
 
 import time
-
 st = time.process_time()
 
 found = False
