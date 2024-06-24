@@ -12,7 +12,7 @@ found = False
 seen = set()
 
 for x in a:
-    if x != 0 and K % x == 0: # found zero case
+    if x != 0 and K % x == 0:
         y = K // x
         if y in seen:
             found = True
