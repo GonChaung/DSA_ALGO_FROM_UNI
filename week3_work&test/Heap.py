@@ -10,7 +10,7 @@ The function is to be passed to the heap instantiation
 class heap:
     def compare(x, y):  # a default compare function for min heap
         return x < y
-        
+
     def empty(self):
         if self.heapsize == 0:
             return True
@@ -29,7 +29,7 @@ class heap:
         if largest != i:
             self.a[i],self.a[largest] = self.a[largest],self.a[i]
             self.heapify(largest)
-        
+
     def insert(self, x):
         self.heapsize += 1
         if len(self.a) < self.heapsize:
@@ -54,15 +54,13 @@ class heap:
     def buildHeap(self):
         for i in range((self.heapsize-1)//2, -1, -1):
             self.heapify(i)
-            
+
     def __init__(self, items=[], cmp=compare):
         self.a = items
         self.cmp = cmp
         self.heapsize = len(self.a)
         if len(self.a) > 0:
             self.buildHeap()
-
-
 
 '''
 # Example class definition for heap's element and test code
