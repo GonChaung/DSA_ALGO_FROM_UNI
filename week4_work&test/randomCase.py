@@ -1,5 +1,9 @@
 import sys
 
+if len(sys.argv) < 2:
+    print("Usage: python randomCase.py <n>")
+    sys.exit(1)
+
 n = int(sys.argv[1])
 
 # quicksort test case gen
