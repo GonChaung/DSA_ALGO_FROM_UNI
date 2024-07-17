@@ -1,4 +1,5 @@
 import sys
+import random
 
 if len(sys.argv) < 2:
     print("Usage: python randomCase.py <n>")
@@ -6,15 +7,10 @@ if len(sys.argv) < 2:
 
 n = int(sys.argv[1])
 
-# quicksort test case gen
+# Generate random numbers
+random_numbers = []
+for _ in range(n):
+    num = random.randint(-2 * n, 4 * n - 1)
+    random_numbers.append(num)
 
-import random
-
-k = 0
-while k < n:
-    i = random.randint(0, 4*n)-2*n
-    p = random.randint(0,10000)/10000
-    if p <= 0.25:
-        print(i, end=' ')
-        k += 1
-
+print(' '.join(map(str, random_numbers)))
