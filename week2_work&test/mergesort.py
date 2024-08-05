@@ -1,11 +1,9 @@
 
 def merge(A, p, q, r):
   return A
-    
 
 def mergesort(A, p, r):
     return A
-
 
 a = list(map(int, input().split()))
 

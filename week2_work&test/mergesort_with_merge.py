@@ -18,6 +18,7 @@ def mergesort(A, p, r):
         mergesort(A, p, q)
         mergesort(A, q+1, r)
         merge(A, p, q, r)
+
 a = list(map(int, input().split()))
 import time
 st = time.process_time()

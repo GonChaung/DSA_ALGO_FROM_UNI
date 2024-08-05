@@ -7,7 +7,7 @@ st = time.process_time()
 
 a.sort()
 
-def BinSrch(key, p, r):
+def BinSrch(key, p, r): ###p is start index and r is end index
     while p <= r:
         q = (p+r)//2
         if a[q] == key:
