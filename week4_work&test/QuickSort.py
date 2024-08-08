@@ -1,3 +1,6 @@
+# Given an input arrary A = [20,40,60,80,100,120,140,160] Analyze the situation of sorting the given array A in asscending order with QuickSort when the last element of a list is always chosen to be a pivot key. Is it the best case, worst case or average case? What is upper bound running time (big-O) of sorting such case?
+
+
 import sys
 import time
 
@@ -28,3 +31,4 @@ et = time.process_time()
 print("Sorted list: ",arr)
 print("Taking time: ", et-st)
 print("Counter value (number of steps): ", counter)
+

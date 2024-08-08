@@ -89,3 +89,59 @@ while not pq2.empty():
     print(pq2.extract().key, end=' ')
 
 '''
+'''
+                        17
+                        /\
+                       15 10
+                       /\   /
+                      6  10 7
+   Given a Max-heap tree in following diagram, complete the representation of this tree by the ocntent of an array. Explain stey by step and show the content of the array during performing heapify() while apply heapsort to the given Max-heap.
+   Element ->
+   Index   -> 0 1 2 3 4 5
+'''
+'''
+
+heapify() 
+
+1. Start by comparing the values of the root node (at index 0) and its
+left child node (at index 1). If the value of the root node is greater
+than or equal to the value of its left child, stop. Otherwise, swap their
+positions in the array and continue with the next step.
+2. Compare the values of the root node and its right child node (at index
+2). If the value of the root node is greater than or equal to the value of
+its right child, stop. Otherwise, swap their positions in the array and
+continue with the next step.
+3. If both children are larger than the root node, we need to perform a
+more extensive search to find the largest element among all three nodes.
+Compare the values of the left child's right child (at index 3) and the
+right child's left child (at index 4). If either of these values is
+greater than or equal to the value of the root node, stop. Otherwise, swap
+their positions in the array and continue with the next step.
+4. Repeat steps 1-3 for each level of the tree, starting from the root
+node and working downward to the bottom level.
+5. Once we have reached the bottom level, we are done! The entire tree has
+been sorted in ascending order using heapsort.
+
+Max-heap tree:
+```
+[17, 15, 10, 6, 10, 7]
+
+Step 1: Compare the values of the root node (at index 0) and its left
+child node (at index 1). They are both greater than or equal to each
+other, so we don't need to swap anything.
+Step 2: Compare the values of the root node and its right child node (at
+index 2). The value of the root node is greater than the value of its
+right child, so we don't need to swap anything.
+Step 3: Since both children are larger than the root node, we need to
+perform a more extensive search. Compare the values of the left child's
+right child (at index 3) and the right child's left child (at index 4).
+The value of the left child's right child is greater than or equal to the
+value of the root node, so we don't need to swap anything.
+Step 4: We have reached the bottom level of the tree, so we are done! The
+entire tree has been sorted in ascending order using heapsort.
+```
+In this example, the sorted array would look like this:
+```
+[6, 7, 10, 15, 17]
+```
+'''
