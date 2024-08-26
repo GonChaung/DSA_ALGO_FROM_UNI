@@ -1,4 +1,6 @@
-
+# name - Thant Si Thu Naing
+# section - 541
+# id - 6611720
 
 # The displacement for left, right, above, below
 adj = [(0,-1),(0,1),(-1,0),(1,0)]
