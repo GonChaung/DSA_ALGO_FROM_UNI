@@ -46,7 +46,11 @@ while not is_destination(Q[0]):
         # Calculate the new position
         # Then if the new position is valid, enqueue it and update the steps matrix
         # Replace "pass" with your code
-        
+        new_r = u.r + d[0]
+        new_c = u.c + d[1]
+        if valid(new_r,new_c):
+            Q.append(position(new_r,new_c))
+            steps[new_r][new_c] = steps[u.r][u.c] + 1
         pass
         
 
