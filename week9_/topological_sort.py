@@ -25,3 +25,5 @@ def topological_sort(V, adj):
             DFS_visit(s, adj)
     stack.reverse()
     return stack
+
+
