@@ -1,0 +1,16 @@
+fully connected graph with n vertices -> n^2 - n / 2
+
+edges > vertices -> Dense Graph
+vertices > edges -> Sparse Graph
+
+0 1 2 3 4
+A B C D E   -> adjacency list Pros ( for space complexity + efficient edge traversal + dynamic graph)
+                              Cons ( checking for edge existence + graphs where almost every pair of vertices is connected, the space efficiency advantage diminishes.)
+
+2D arrays -> adjacency matrix Pros ( constant time / very fast and O(1) / simple implementation and suitable for Dense Graph)
+                              Cons ( space inefficient for Sparse Graph / inefficient edge traversal / Adding or removing vertices is less efficient because it may involve resizing the matrix)
+
+Adjacency List is preferred for sparse graphs due to its space efficiency and faster edge traversal.
+Adjacency Matrix is preferred for dense graphs where constant-time edge checks are beneficial and space complexity is less of an issue.
+
+
