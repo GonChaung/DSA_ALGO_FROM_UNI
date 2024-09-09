@@ -19,7 +19,29 @@ f = [-1]*V
 
 # Write your Depth-First Search code below
 # Don't forget to make the initial dfs call! :)
+def dfs_visit(u):
+    global time
+    time += 1
+    d[u] = time
+    color[u] = "GRAY"
 
+    for v in adj_list[u]:
+        if color[v] == "WHITE":
+            p[v] = u
+            dfs_visit(v)
+
+    color[u] = "BLACK"
+    time += 1
+    f[u] = time
+
+
+def dfs():
+    for u in range(V):
+        if color[u] == "WHITE":
+            dfs_visit(u)
+
+
+dfs()
 
 
 # The code below is for printing output
