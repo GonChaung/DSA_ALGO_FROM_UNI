@@ -32,6 +32,22 @@ def BFS(s):
         color[u] = "BLACK"
 
 BFS(0)
+s = 0
+def bfs_aj():
+    color[s] = "GREY"
+    d[s] = 0
+    p[s] = None
+    Q = [s]
+    while Q != []:
+        u = Q.pop(0)
+        for v in adj_list[u]:
+            if color[v] == "WHITE":
+                color[v] = "GREY"
+                d[v] = d[u] + 1
+                d[v] = u
+                Q.append(v)
+        color[u] = "BLACK"
+
 
 # The code below is for printing output
 for v in range(V):
