@@ -1,9 +1,12 @@
 # name - Thant Si Thu Naing
 # ID - 611720
 # section - 541
+import time
 
 from BinarySearchTree import *
 import random
+
+from week7_.RedBlackTree import RBTree
 
 # Q1
 '''
