@@ -1,3 +1,7 @@
+# name - Thant Si Thu Naing
+# id - 6611720
+# section - 541
+
 import heapq
 
 def prim(V, edges):
@@ -36,7 +40,6 @@ edges = []
 for _ in range(E):
     u, v, weight = map(int, input().split())
     edges.append((u, v, weight))
-
 mst_weight, mst_edges = prim(V, edges)
 
 print(mst_weight)
